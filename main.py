@@ -28,7 +28,7 @@ from rich.prompt import Prompt
 from dotenv import load_dotenv
 
 # Force UTF-8 output on Windows
-import sys, io
+import io
 if sys.platform == "win32":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
